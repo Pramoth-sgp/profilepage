@@ -26,6 +26,7 @@
         height: 40px;
         border-radius: 15px;
         background-image: linear-gradient(to top right,yellow,red,blue);
+        cursor: pointer;
     }
 
     /* .one
@@ -100,12 +101,28 @@
 }
 .submit
 {
-  margin-left: 350px;
+  
   height: 40px;
   width: 100px;
   border-radius: 20px;
   font-size: 25px;
   background-image: linear-gradient(to top right,yellow,red,blue);
+  cursor: pointer;
+}
+
+footer
+{
+  text-align: center;
+}
+
+button:hover
+{
+  background-image: linear-gradient(to top left,blue,red,yellow);
+}
+
+.submit:hover
+{
+  background-image: linear-gradient(to top left,blue,red,yellow);
 }
 </style>
 <body>
@@ -207,8 +224,10 @@
     <div id="Suggestion">
       <h1>give me some suggestions to improve my skills</h1>
       <textarea ></textarea><br>
-      <input type="submit" value="SEND" class="submit" onclick="text()">
+      <footer>
       <h2 id="text"></h2>
+      <input type="submit" value="SEND" class="submit" onclick="text()">
+    </footer>
     </div>
   </div>
 <script>
